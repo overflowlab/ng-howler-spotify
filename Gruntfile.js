@@ -51,12 +51,6 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        src:  'audio/**.**',
-                        flatten: true,
-                        dest: 'build/audio'
-                    },
-                    {
-                        expand: true,
                         src:  'js/**.js',
                         flatten: true,
                         dest: 'build/js'
