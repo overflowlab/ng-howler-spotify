@@ -64,6 +64,30 @@ module.exports = function (grunt) {
                         src:  'build/*',
                         flatten: true,
                         dest: 'docs'
+                    },
+                    {
+                        expand: true,
+                        src:  'build/app/*',
+                        flatten: true,
+                        dest: 'docs/app'
+                    },
+                    {
+                        expand: true,
+                        src:  'build/css/*',
+                        flatten: true,
+                        dest: 'docs/css'
+                    },
+                    {
+                        expand: true,
+                        src:  'build/js/*',
+                        flatten: true,
+                        dest: 'docs/js'
+                    },
+                    {
+                        expand: true,
+                        src:  'build/templates/*',
+                        flatten: true,
+                        dest: 'docs/templates'
                     }
                 ]
             }
