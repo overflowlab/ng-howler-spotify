@@ -56,6 +56,16 @@ module.exports = function (grunt) {
                         dest: 'build/js'
                     }
                 ]
+            },
+            github: {
+                files: [
+                    {
+                        expand: true,
+                        src:  'build/*',
+                        flatten: true,
+                        dest: 'docs'
+                    }
+                ]
             }
         },
         clean: {
@@ -176,6 +186,7 @@ module.exports = function (grunt) {
         'clean:css',
         'htmlbuild:app',
         'replace:app',
+        'copy:github',
         'watch'
     ]);
 
