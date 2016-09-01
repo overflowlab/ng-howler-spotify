@@ -1,3 +1,4 @@
+	<div class="cover" ng-class="{'show' : playerShow}" style="background-image: url('{{  cover }}')"></div>
 	<div class="search-container" ng-class="{'hide' : playerShow}">
 		<input type="text" ng-model="spotifySearch" placeholder="Search for artist"/>
 		<button ng-click="search()">Search</button>
@@ -32,24 +33,12 @@
 		</section>
 	</div>
 
-	<!-- Controls -->
-
-	<!-- Progress -->
-
-
-	<!-- Playlist -->
-
-
-	<!-- Volume -->
 	<div id="volume" class="fadeout">
 		<div id="barFull" class="bar"></div>
 		<div id="barEmpty" class="bar"></div>
 		<div id="sliderBtn"></div>
 	</div>
-
-
-
-	  <script> 
+<script> 
 
 /* Modified from https://github.com/CaffeinaLab/SiriWaveJS */
 
